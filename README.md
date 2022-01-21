@@ -1,5 +1,11 @@
 ### Hi I'm Furkan 👋 
 
+
+- This is my personal web page. I made this with ![HTML](https://img.shields.io/badge/HTML-e34f26), ![CSS](https://img.shields.io/badge/CSS-2965f1) , ![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e) and Bootstrap in 2019. 
+- I also made my homepage with [tailwind](https://furkanarici.com/tailwind.html). 
+
+about me:
+
 - 📘 I’m Certified Public Accountant (CPA).
 - 🏢 I work as a cofounder in an accounting company [ARICI SMMM LTD](http://www.aricimalimusavirlik.com.tr). 
 - 💻 I've been learning ![HTML](https://img.shields.io/badge/HTML-e34f26), ![CSS](https://img.shields.io/badge/CSS-2965f1) and ![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e) for a while.
