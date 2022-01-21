@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=”description” content='Furkan Şevki Arıcı - Muhasebe & Kodlama'>
+    <meta name=”keywords” content='furkan,şevki,arıcı,Furkan Şevki Arıcı' />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://kit.fontawesome.com/850d7ccc7a.js" crossorigin="anonymous"></script>
+
+    <title>Furkan Şevki ARICI | Personel Sözleşmesi</title>
+  </head>
+  <body>
+      
+  <br><br><br>
+  <header>
+    <div class="container">
+      <div class="row"> 
+      <div class="col-md-3"> <img id="logo" src="./img/furkanSevkiARICI.webp" class="rounded mx-auto d-block rounded-circle img-fluid" id="fotograf" alt="Furkan Şevki ARICI" >
+      </div>
+      <div class="col-md-9">
+        <h2>Personel Sözleşmesi</h2>
+      </div>
+      </div>
+    </header>
+    <section class="container">
+      <br><br>
+      <div class="row">
+        <div class="col-md-3">
+          <div>
+       
+            <a href="mailto:furkan@furkanarici.com">furkan@furkanarici.com</a><br>
+    
+            <span style="font-size: 2em; color: black; letter-spacing: 0.8px;">
+              <a href="https://www.linkedin.com/in/furkan-şevki-arıcı-66567672/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/aricifurkan" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/furkanarici" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/furkanarici" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/aricifurkan/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </span>
+          </div> <br>
+          <div>
+            <h4>Araçlar</h4>
+            <ul>
+              <li><a href="./PersSozlesme.html">Personel Sözleşmesi</a></li>
+              <li><a href="./kiraKontratı.html">Kira Kontratı</a></li>
+              <li><a href="./adresDegisikligi.html">Adres Değişikliği</a></li>
+              <li><a href="kurumGelir.html">Şirket Türü Vergi Karşılaştırma</a></li>
+            </ul>
+      </div>
+      
+        </div>
+        <div class="col-md-9">
+
+          <div id="form">
+            
+            
+          
+          </div>
+
+          <div id="butonlar">
+            <button onclick="sozlesme()" class="btn btn-success">Belgeyi Oluştur</button>
+            <button onclick="printDiv('belge')" class="btn btn-info ">Yazdır</button>
+            <button id="btn-export" onclick="exportHTML();" class="btn btn-info">İndir</button>
+            <br><br>
+          </div>
+
+          <div id="belge">
+              <div id="belgeDetay"></div>
+            
+          </div>
+        
+        </div>
+     
+        
+     
+    </section>
+
+    <footer class="container" >Furkan Şevki ARICI  - İstanbul - 2020</footer>
+
+
+      
+
+    
+
+    
+    
+    <script src="./js/destek.js"></script>
+    <script src="./js/sozlesme.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  </body>
+</html>

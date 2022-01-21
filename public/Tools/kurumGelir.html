@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=”description” content='Furkan Şevki Arıcı - Gelir Vergisi & Kurumlar Vergisi'>
+    <meta name=”keywords” content='kurumlar Verigsi, Gelir Vergisi, Gelir Kurum Karşılaştırma' />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/850d7ccc7a.js" crossorigin="anonymous"></script>
+    <style> 
+
+    </style>
+
+    <title>Furkan Şevki ARICI | Gelir Vergisi & Kurumlar Vergisi</title>
+  </head>
+  <body>
+      
+  <br><br><br>
+  <header>
+    <div class="container">
+      <div class="row"> 
+      <div class="col-md-3"> <img id="logo" src="./img/furkanSevkiARICI.webp"  class="rounded mx-auto d-block rounded-circle img-fluid" id="fotograf" alt="Furkan Şevki ARICI" >
+      </div>
+      <div class="col-md-9">
+        <h2>Gelir Vergisi & Kurumlar Vergisi Hesaplama ve Karşılaştırma</h2>
+        <p>Bu ekranda Gelir vergisi ve Kurumlar vergisi hesaplamalarını yapabilirsiniz. Özellikle limited/Anonim şirket veya şahıs firması mı kurmalıyım ? hangi şirket türünde ne kadar vergi öderim gibi sorulara yanıt verme amacıyla hazırlanmıştır.</p>
+      </div>
+      </div>
+    </header>
+    <section class="container">
+      <br><br>
+      <div class="row">
+        <div class="col-md-3">
+          <div>
+       
+            <a href="mailto:furkan@furkanarici.com">furkan@furkanarici.com</a><br>
+    
+            <span style="font-size: 2em; color: black; letter-spacing: 0.8px;">
+              <a href="https://www.linkedin.com/in/furkan-şevki-arıcı-66567672/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/aricifurkan" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/furkanarici" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/furkanarici" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/aricifurkan/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </span>
+            </div> <br>
+            <div>
+            <h4>Araçlar</h4>
+            <ul>
+              <li><a href="./PersSozlesme.html">Personel Sözleşmesi</a></li>
+              <li><a href="./kiraKontratı.html">Kira Kontratı</a></li>
+              <li><a href="./adresDegisikligi.html">Adres Değişikliği</a></li>
+              <li><a href="./etebligat.html">e-Tebligat Formu</a></li>
+              <li><a href="./kurumGelir.html">Şirket Türü Vergi Karşılaştırma</a></li>
+              <li><a href="./personelMaliyetHesaplama.html">Personel Hesaplamaları</a></li>
+            </ul>
+          </div>
+      
+        </div>
+          <div class="col-md-9">
+            <div class="kazanc">
+            <label for="">Yıllık Toplam Kazancınız</label><br>
+            <input type="number" id="kazanc" onkeyup="hesapla()"><br><br>
+          </div>
+          
+          <div class="row">
+            <div id="gelir" class="col-md-6">
+            <h3>Gelir Vergisi Mükellefi</h3>
+            <h4>Şahıs Firmaları</h4>
+            <h4>Gelir Vergisi</h4>
+            <label class="soru">Gelir Vergisi Matrahı</label>
+            <span id="gelirVergisiMatrahi"></span>
+            <br>
+            <label class="soru">Vergi Oranı</label>
+            <span id="gelirVOrani"></span>
+            <br>
+            <label class="soru">Gelir Verigisi</label>
+            <mark><span id="gelirVergisiS"></span></mark>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+            </div>
+          
+            <div id="kurum" class="col-md-6">
+            <h3>Kurumlar Vergisi Mükellefi</h3>
+            <h4>Limited Şirket, Anonim Şirket</h4>
+            <h4>Huzur Hakkı</h4>
+            <label class="soru">Yıllık Huzur Hakkı</label>
+            <input type="number" onkeyup="hesapla()" id="huzur">
+            <br>
+            <label class="soru">Brüt Huzur Hakkı: </label>
+            <span id="bHuzurS"></span>
+            <br>
+            <label class="soru">Huzur Hakkı Stopaj</label>
+            <mark><span id="stopajHuzurS"></span></mark>
+            <br>
+            <h4>Kurumlar Vergisi</h4>
+            <label class="soru">Kurumlar Vergisi Matrahı</label>
+            <span id="kurumlarVMatrahiS"></span>
+            <br>
+            <label class="soru">Kurumlar Vergisi</label>
+            <mark><span id="kurumlarVS"></span></mark>
+            <br>
+            <h4>Kar Dağıtımı</h4>
+            <label class="soru">Vergi Sonrası Kar (Dağıtılacak kar)</label>
+            <span id="kVergiSonrasiKarS"></span>
+            <br>
+            <label class="soru">Kar Dağıtımı Stopajı</label>
+            <mark><span id="karDagitimiStopajS"></span></mark>
+            <br>
+            <label class="soru">Gelir Vergisi Matrahı(GVK Md. 22/2)</label>
+            <span id="kdagitimGelirVergisiMatrahiS"></span>
+            <br>
+            <label class="soru">Gelir Vergisi</label>
+            <span id="kDagitimGelirVergisiS"></span>
+            <br>
+            <label class="soru">Terkin Sonrası Kalan</label>
+            <mark><span id="terkinSonrasiKalanS"></span> <span id="iadeDurumuS"></span></mark>
+            <br>
+          
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Sonuç - Gelir</h4>
+            <label class="soru">Toplam Vergi oranı</label>
+            <span id="gelirVOrani2"></span>
+            <br>
+            <label class="soru">Toplam Vergi</label>
+            <mark><span id="gelirVergisiS2"></span></mark>
+            </div>
+
+            <div class="col-md-6">
+              <h4>Sonuç - Kurum</h4>
+              <label class="soru">Toplam Vergi oranı</label>
+              <span id="kVergiOraniTop"></span>
+              <br>
+              <label class="soru">Toplam Vergi</label>
+              <mark><span id="kToplamVergiS"></span></mark>
+            </div>
+
+          </div>
+
+          <div class="col-md-12 text-center ">
+             <span>Fark</span>
+             <span id="sonucS"></span>
+
+          </div>
+
+          
+
+    
+         
+
+       
+      
+        </div>
+        
+      </div>
+     
+        
+     
+    </section>
+
+    <footer class="container" >Furkan Şevki ARICI  - İstanbul - 2022</footer>
+
+
+      
+
+    
+
+    
+    
+    <script src="./js/destek.js"></script>
+    <script src="./js/vergiHesaplama.js"></script>
+    <script src="./js/gelirVKurumV.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
