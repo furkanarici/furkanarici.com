@@ -1,5 +1,5 @@
 // Aasgari ücret değiştiğinde aşağıdaki iki parametreyi güncelle
-const brutAsgariUcret = 5004;
+const brutAsgariUcret = 10008;
 const gelirVergisi1dilim = 0.15;
 
 function agiHesapla(esDurumu, cocuksayisi) {

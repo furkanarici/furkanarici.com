@@ -1,24 +1,58 @@
-const gelirVergisiUcret = (vergi_matrahi) => {
+const gvOranlari = {
+    "2023": {
+        "diger": {
+            dilim1: 70_000,
+            dilim2: 150_000,
+            dilim3: 370_000,
+            dilim4: 1_900_000,
+        },
+        "ucret": {
+            dilim1: 70_000,
+            dilim2: 150_000,
+            dilim3: 550_000,
+            dilim4: 1_900_000,
+        }
+    },
+    "2024": {
+        "diger": {
+            dilim1: 110_000,
+            dilim2: 230_000,
+            dilim3: 580_000,
+            dilim4: 3_000_000,
+        },
+        "ucret": {
+            dilim1: 110_000,
+            dilim2: 230_000,
+            dilim3: 870_000,
+            dilim4: 3_000_000,
+        }
+    },
+}
+
+
+const gelirVergisiUcret = (vergi_matrahi, year) => {
     // Diğer gelirler için gelir vergisi hesaplama
+
+    if (!year) year = new Date().getFullYear();
 
     // 1. vergi dilimi için parametreler ve verginin hesaplanması
     let dilim_1_ilk = 0;
-    let dilim_1_son = 32000;
+    let dilim_1_son = gvOranlari[year]["ucret"]["dilim1"];
     let dilim_1_oran = 0.15;
     const dilim_1_vergi = dilim_1_son * dilim_1_oran
     // 2. vergi dilimi için parametreler ve verginin hesaplanması
     let dilim_2_ilk = dilim_1_son;
-    let dilim_2_son = 70000;
+    let dilim_2_son = gvOranlari[year]["ucret"]["dilim2"];
     let dilim_2_oran = 0.20;
     const dilim_2_vergi = dilim_1_vergi + ((dilim_2_son - dilim_2_ilk) * dilim_2_oran)
     // 3. vergi dilimi için parametreler ve verginin hesaplanması
     let dilim_3_ilk = dilim_2_son;
-    let dilim_3_son = 250000;
+    let dilim_3_son = gvOranlari[year]["ucret"]["dilim3"];
     let dilim_3_oran = 0.27;
     const dilim_3_vergi = dilim_2_vergi + ((dilim_3_son - dilim_3_ilk) * dilim_3_oran)
     // 4. vergi dilimi için parametreler
     let dilim_4_ilk = dilim_3_son;
-    let dilim_4_son = 880000;
+    let dilim_4_son = gvOranlari[year]["ucret"]["dilim4"];
     let dilim_4_oran = 0.35;
     const dilim_4_vergi = dilim_3_vergi + ((dilim_4_son - dilim_4_ilk) * dilim_4_oran)
     // 5. vergi dilimi için parametreler
@@ -34,27 +68,29 @@ const gelirVergisiUcret = (vergi_matrahi) => {
 };
 
 
-const gelirVergisi = (vergi_matrahi) => {
+const gelirVergisi = (vergi_matrahi, year) => {
     // Diğer gelirler için gelir vergisi hesaplama
+
+    if (!year) year = new Date().getFullYear();
 
     // 1. vergi dilimi için parametreler ve verginin hesaplanması
     let dilim_1_ilk = 0;
-    let dilim_1_son = 32000;
+    let dilim_1_son = gvOranlari[year]["diger"]["dilim1"];
     let dilim_1_oran = 0.15;
     const dilim_1_vergi = dilim_1_son * dilim_1_oran
     // 2. vergi dilimi için parametreler ve verginin hesaplanması
     let dilim_2_ilk = dilim_1_son;
-    let dilim_2_son = 70000;
+    let dilim_2_son = gvOranlari[year]["diger"]["dilim2"];
     let dilim_2_oran = 0.20;
     const dilim_2_vergi = dilim_1_vergi + ((dilim_2_son - dilim_2_ilk) * dilim_2_oran)
     // 3. vergi dilimi için parametreler ve verginin hesaplanması
     let dilim_3_ilk = dilim_2_son;
-    let dilim_3_son = 170000;
+    let dilim_3_son = gvOranlari[year]["diger"]["dilim3"];
     let dilim_3_oran = 0.27;
     const dilim_3_vergi = dilim_2_vergi + ((dilim_3_son - dilim_3_ilk) * dilim_3_oran)
     // 4. vergi dilimi için parametreler
     let dilim_4_ilk = dilim_3_son;
-    let dilim_4_son = 880000;
+    let dilim_4_son = gvOranlari[year]["diger"]["dilim4"];
     let dilim_4_oran = 0.35;
     const dilim_4_vergi = dilim_3_vergi + ((dilim_4_son - dilim_4_ilk) * dilim_4_oran)
     // 5. vergi dilimi için parametreler
@@ -140,6 +176,6 @@ const gelirVergisindenMatrahUcret = (vergi) => {
 
 
 const kurumlarVergisiHesapla = (matrah) => {
-    const kurumlarVergisiOrani = 0.22;
+    const kurumlarVergisiOrani = 0.25;
     return matrah * kurumlarVergisiOrani;
 };
