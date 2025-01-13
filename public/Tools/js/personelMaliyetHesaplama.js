@@ -1,5 +1,5 @@
 // Aasgari ücret değiştiğinde aşağıdaki iki parametreyi güncelle
-const brutAsgariUcret = 20002.5;
+const brutAsgariUcret = 26005.50;
 
 // SGK parametreleri
 const sgkPirimiOrani = 0.14;
@@ -250,7 +250,7 @@ const maasHesapla = () => {
   <table class="table table-sm table-hover table-striped table-responsive ">
   <thead>
     <tr>
-      <th scope="col">2024</th>
+      <th scope="col">2025</th>
       <th scope="col">1</th>
       <th scope="col">2</th>
       <th scope="col">3</th>

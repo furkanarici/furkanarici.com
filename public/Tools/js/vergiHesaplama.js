@@ -27,6 +27,20 @@ const gvOranlari = {
             dilim4: 3_000_000,
         }
     },
+    "2025": {
+        "diger": {
+            dilim1: 158_000,
+            dilim2: 330_000,
+            dilim3: 800_000,
+            dilim4: 4_300_000,
+        },
+        "ucret": {
+            dilim1: 158_000,
+            dilim2: 330_000,
+            dilim3: 1_200_000,
+            dilim4: 4_300_000,
+        }
+    },
 }
 
 
